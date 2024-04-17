@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Demo_Website_Test"
+  description: A website template built by Backstage.
+  annotations:
+    github.com/project-slug: ONS-Innovation/Demo_Website_Test
+    backstage.io/techdocs-ref: dir:.
+  links: 
+    - title: Website
+      url: http://.s3.eu-west-2.amazonaws.com/index.html
+      icon: search
+    - title: Bucket
+      url: https://s3.console.aws.amazon.com/s3/buckets/
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/sdp-test"
